@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <Navbar title="My First React App"/>
-    <Textarea heading='heading'/>
+    <Textarea heading='Word Counter'/>
     </>
   );
 }
