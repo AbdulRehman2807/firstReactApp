@@ -1,9 +1,15 @@
-import React from "react";
+// import React, { useState } from "react";
 
 export default function Navbar(props) {
+
+  // const [style, setStyle]= useState(myStyle) 
+  let myStyle = {
+    backgroungColor :"white",
+    color: 'black'
+  }
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav style={myStyle}  className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             {props.title}
@@ -32,7 +38,6 @@ export default function Navbar(props) {
                 </a>
               </li>
             </ul>
-
             {/* <form className="d-flex">
               <input
                 className="form-control me-2"
@@ -44,6 +49,20 @@ export default function Navbar(props) {
                 Search
               </button>
             </form> */}
+            <div className="form-check form-switch">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+              <label
+                className="form-check-label text-light"
+                for="flexSwitchCheckDefault"
+              >
+                Dark Mode
+              </label>
+            </div>
           </div>
         </div>
       </nav>

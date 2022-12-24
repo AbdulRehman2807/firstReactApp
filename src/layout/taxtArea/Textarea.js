@@ -40,7 +40,6 @@ export default function Twextarea(props) {
     const space = text.replace(/\s+/g," ")
     setText(space);
   };
-
   return (
     <>
       <div className="container text-center pt-5">
