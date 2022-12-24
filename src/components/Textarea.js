@@ -16,13 +16,17 @@ export default function Twextarea(props) {
         }
     }
     const changeToCapetalize = () => {
-        // let check=text.match(/\b(\w)/g).map(value  => value[0].toUpperCase()+value.slice(1)).join(' ')
+        if (text === text.toLowerCase()){
         if(text){
-            const check = text.split(' ').map(value  => value[0].toUpperCase()+value.slice(1)).join(' ')
+            const check = text.split(' ').map(value => value[0].toUpperCase()+value.slice(1)).join(' ')
             setText(check)
         } else{
             alert("chek")
         }
+    }else{
+        const check = text.split(' ').map(value => value[0]+value.slice(1).toLowerCase()).join(' ')
+        setText(check)
+    }
     
     }
     const clearAllData = () => {

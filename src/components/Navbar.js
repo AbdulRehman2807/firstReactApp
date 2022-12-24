@@ -26,9 +26,14 @@ export default function Navbar(props) {
                   Home
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="about">
+                  About
+                </a>
+              </li>
             </ul>
 
-            <form className="d-flex">
+            {/* <form className="d-flex">
               <input
                 className="form-control me-2"
                 type="search"
@@ -38,7 +43,7 @@ export default function Navbar(props) {
               <button className="btn btn-outline-light" type="submit">
                 Search
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>
