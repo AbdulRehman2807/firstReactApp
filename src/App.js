@@ -1,5 +1,5 @@
-import Navbar from "./components/Navbar";
-import Textarea from "./components/Textarea";
+import Navbar from "./components/naveItem/Navbar";
+import Textarea from "./layout/taxtArea/Textarea";
 
 
 function App() {
